@@ -16,7 +16,7 @@ const Pokemon = (props) => {
 
     return (
         <div>
-            <a href="https://www.google.com/">
+            <a href={`https://pokemondb.net/pokedex/${name}`}>
                 <h3>{id}</h3>
                 <img src={img} />
                 <h2>{name}</h2>

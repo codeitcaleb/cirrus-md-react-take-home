@@ -27,12 +27,6 @@ const Pagination = ({data, RenderComponent, title, pageLimit, dataLimit}) => {
         <div>
            <h1>{title}</h1>
 
-           <div className="dataContainer">
-               {getPaginatedData().map((d, idx) => (
-                <RenderComponent key={idx} data={d} />
-               ))}
-           </div>
-
            <div className="pagination">
                <button
                  onClick={goToPreviousPage}
@@ -48,6 +42,13 @@ const Pagination = ({data, RenderComponent, title, pageLimit, dataLimit}) => {
             >
                Next
             </button>
+
+           <div className="dataContainer">
+               {getPaginatedData().map((d, idx) => (
+                <RenderComponent key={idx} data={d} />
+               ))}
+           </div>
+
         </div>
     )
 }
