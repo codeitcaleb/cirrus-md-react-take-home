@@ -3,7 +3,7 @@ import Pagination from './features/Pagination.js'
 import Pokemon from './components/Pokemon.js'
 import './App.css';
 
-const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=151";
+const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=898";
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -20,14 +20,17 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div>
+      <div className="nes-container is-title">
+        <h1 className="title">Pokémon</h1>
+      </div>
       {
         pokemon.length > 0 ? (
          <Pagination 
            data={pokemon}
            RenderComponent={Pokemon}
-           title="Pokemon"
-           dataLimit={10}
+           title="Pokémon"
+           dataLimit={9}
          />
          ) : <div>No Pokemon Available</div>
       } 

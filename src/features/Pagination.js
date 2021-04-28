@@ -1,6 +1,7 @@
 import {useState} from 'react'
 
 import './Pagination.css'
+import arrow from '../images/arrow.png'
 
 const Pagination = ({data, RenderComponent, title, pageLimit, dataLimit}) => {
     const [pages] = useState(Math.round(data.length / dataLimit));
@@ -24,31 +25,29 @@ const Pagination = ({data, RenderComponent, title, pageLimit, dataLimit}) => {
     }
 
     return (
-        <div>
-           <h1>{title}</h1>
-
+        <div className="nes-container is-title">
+           
            <div className="pagination">
                <button
                  onClick={goToPreviousPage}
                  className={`prev ${currentPage === 1 ? 'disabled' : ''}`}
                 >
-                    Prev
+                    <img className="left-arrow" src={arrow} alt="Previous"/>
                 </button>
-           </div>
 
-            <button 
+                <button 
                 onClick={goToNextPage}
                 className={`next ${currentPage === pages ? 'disabled' : ''}`}
             >
-               Next
+               <img className="right-arrow" src={arrow} alt="Next"/>
             </button>
+           </div>
 
-           <div className="dataContainer">
+           <div className="nes-container">
                {getPaginatedData().map((d, idx) => (
                 <RenderComponent key={idx} data={d} />
                ))}
            </div>
-
         </div>
     )
 }

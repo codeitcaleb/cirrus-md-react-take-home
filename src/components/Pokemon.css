@@ -1,0 +1,56 @@
+.pokemon-card {
+    font-family: 'Press Start 2P';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    border: 14px pixelated #000;
+    background: #fff;
+    margin: 1px 0px;
+    padding: 0px;
+}
+
+.dex-number {
+    padding-right: 10px;
+}
+
+.pokemon-img {
+    margin-right: 10px;
+}
+
+.pokemon-name {
+    text-align: center;
+    align-items: center;
+}
+
+.pokemon-card button {
+    margin-left: 500px;
+    float: right;
+    justify-content: flex-end;
+    align-items:flex-end;
+    font-family: 'Press Start 2P';
+    font-size: 13px;
+    padding: 1px 3px;
+    /* margin-right: 150px; */
+    height: 32px; 
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 3px solid;
+    border-radius: 50px;
+    width: 64px;
+    height: 55px;
+}
+
+/* button {
+    align-items:flex-end;
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 200px;
+    height: 45px; 
+} */
