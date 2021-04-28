@@ -25,7 +25,7 @@ const Pagination = ({data, RenderComponent, title, pageLimit, dataLimit}) => {
     }
 
     return (
-        <div className="nes-container is-title">
+        <div className="outer nes-container">
            
            <div className="pagination">
                <button
@@ -43,7 +43,7 @@ const Pagination = ({data, RenderComponent, title, pageLimit, dataLimit}) => {
             </button>
            </div>
 
-           <div className="nes-container">
+           <div className="paginated-container nes-container">
                {getPaginatedData().map((d, idx) => (
                 <RenderComponent key={idx} data={d} />
                ))}

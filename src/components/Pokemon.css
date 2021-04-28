@@ -16,18 +16,15 @@
 }
 
 .dex-number {
-    padding-right: 10px;
-}
-
-.pokemon-img {
-    /* margin: 0px 20px 0px 0px; */
+    padding-right: 10px
 }
 
 .pokemon-name {
     text-align: center;
     align-items: center;
     vertical-align: middle;
-    padding: 10px
+    padding: 10px;
+    /* margin: auto; */
 }
 
 .pokemon-card button {
@@ -54,11 +51,3 @@ img {
     height: 50px;
 }
 
-/* button {
-    align-items:flex-end;
-    font-family: 'Press Start 2P';
-    font-size: 14px;
-    padding: 10px;
-    margin-right: 200px;
-    height: 45px; 
-} */

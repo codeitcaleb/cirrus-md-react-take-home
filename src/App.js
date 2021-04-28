@@ -20,8 +20,8 @@ function App() {
   }, [])
 
   return (
-    <div>
-      <div className="nes-container is-title">
+    <div className="App">
+      <div className="header nes-container">
         <h1 className="title">Pokémon</h1>
       </div>
       {

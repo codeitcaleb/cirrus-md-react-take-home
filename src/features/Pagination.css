@@ -2,7 +2,19 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .paginated-container {
+    background: gray;
+  }
   
+.paginated-container .nes-container {
+  height: 100%;
+}
+
+.outer .nes-container {
+  height: 100%;
+}
+
   .paginationItem {
     background: #fff;
 
@@ -12,7 +24,6 @@
     width: 35px;
     position: relative;
     margin: 0 5px;
-    cursor: pointer;
   }
   
   .paginationItem span {
@@ -29,7 +40,6 @@
     padding: 5px 2px;
     color: blue;
     margin: 10px 2px;
-    cursor: pointer;
   }
 
   .left-arrow {
