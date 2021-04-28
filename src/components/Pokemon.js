@@ -16,18 +16,17 @@ const Pokemon = (props) => {
     }, [name, url])
 
     return (
-        <div className="">
+        <div className="pokemon-container">
             <a href={`https://pokemondb.net/pokedex/${name}`}>
-                    <div className="pokemon-card nes-container">
-                            <h3 className="dex-number">{id}</h3>
-                            <img className="pokemon-img" src={img} />
-                            <h2 className="pokemon-name">{name.toUpperCase()}</h2>
+                <div className="pokemon-card nes-container">
+                    <h3 className="dex-number">{id}</h3>
+                    <img className="pokemon-img" src={img} />
+                    <h2 className="pokemon-name">{name.toUpperCase()}</h2>
                             
-                            <button className="nes-btn is-primary" onClick={() => alert(`${name.toUpperCase()}!`)}>
-                                I Choose You
-                            </button>
+                    <button className="nes-btn is-primary" onClick={() => alert(`${name.toUpperCase()}!`)}>
+                        I Choose You
+                    </button>
                 </div>
-               
             </a>
             
         </div>

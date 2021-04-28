@@ -1,3 +1,8 @@
+.pokemon-container {
+    position: relative;
+    display: inline;
+}
+
 .pokemon-card {
     font-family: 'Press Start 2P';
     display: flex;
@@ -6,8 +11,8 @@
     font-size: 12px;
     border: 14px pixelated #000;
     background: #fff;
-    margin: 1px 0px;
-    padding: 0px;
+    margin: 0px 0px 1px;
+    padding: 4px 10px;
 }
 
 .dex-number {
@@ -15,24 +20,26 @@
 }
 
 .pokemon-img {
-    margin-right: 10px;
+    /* margin: 0px 20px 0px 0px; */
 }
 
 .pokemon-name {
     text-align: center;
     align-items: center;
+    vertical-align: middle;
+    padding: 10px
 }
 
 .pokemon-card button {
-    margin-left: 500px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    text-align: center;
+    align-items: flex-end;
     float: right;
     justify-content: flex-end;
-    align-items:flex-end;
     font-family: 'Press Start 2P';
-    font-size: 13px;
-    padding: 1px 3px;
-    /* margin-right: 150px; */
-    height: 32px; 
+    height: 32px;
 }
 
 a {
@@ -42,8 +49,9 @@ a {
 img {
     border: 3px solid;
     border-radius: 50px;
-    width: 64px;
-    height: 55px;
+   object-fit: fill;
+    width: 50px;
+    height: 50px;
 }
 
 /* button {
