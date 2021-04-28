@@ -19,13 +19,11 @@ const Pokemon = (props) => {
             <a href={`https://pokemondb.net/pokedex/${name}`}>
                 <h3>{id}</h3>
                 <img src={img} />
-                <h2>{name}</h2>
+                <h2>{name.toUpperCase()}</h2>
                 
-                <a href={url}>
-                    <button>
-                        I Choose You
-                    </button>
-                </a>
+                <button onClick={() => alert(`${name.toUpperCase()}!`)}>
+                   I Choose You
+                </button>
             </a>
             
         </div>
