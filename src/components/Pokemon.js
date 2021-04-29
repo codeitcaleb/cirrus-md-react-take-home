@@ -20,7 +20,7 @@ const Pokemon = (props) => {
             <a href={`https://pokemondb.net/pokedex/${name}`}>
                 <div className="pokemon-card nes-container">
                     <h3 className="dex-number">{id}</h3>
-                    <img className="pokemon-img" src={img} />
+                    <img className="pokemon-img" src={img} alt={`${name}`} />
                     <h2 className="pokemon-name">{name.toUpperCase()}</h2>
                             
                     <button className="nes-btn is-primary" onClick={() => alert(`${name.toUpperCase()}!`)}>

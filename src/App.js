@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Pagination from './features/Pagination.js'
-import Pokemon from './components/Pokemon.js'
+import ResponsiveLayout from './features/ResponsiveLayout/ResponsiveLayout'
+import InfiniteScroll from './features/InfiniteScroll/InfiniteScroll'
+import Pokemon from './components/Pokemon'
 import './App.css';
 
 const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=898";
@@ -8,6 +9,7 @@ const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=898";
 function App() {
   const [pokemon, setPokemon] = useState([]);
   const [error, setError] = useState('');
+  
 
   useEffect(() => {
     fetch(url)
@@ -17,21 +19,19 @@ function App() {
     })
     .then((data) => setPokemon(data.results))
     .catch((error) => setError(error));
-  }, [])
+  }, []);
 
   return (
     <div className="App">
       <div className="header nes-container">
         <h1 className="title">Pokémon</h1>
       </div>
+
       {
         pokemon.length > 0 ? (
-         <Pagination 
-           data={pokemon}
-           RenderComponent={Pokemon}
-           title="Pokémon"
-           dataLimit={9}
-         />
+          <ResponsiveLayout 
+            data={pokemon}
+          />
          ) : <div>No Pokemon Available</div>
       } 
     </div>

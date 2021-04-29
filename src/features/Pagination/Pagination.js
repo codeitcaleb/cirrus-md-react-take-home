@@ -1,9 +1,9 @@
 import {useState} from 'react'
 
 import './Pagination.css'
-import arrow from '../images/arrow.png'
+import arrow from '../../images/arrow.png'
 
-const Pagination = ({data, RenderComponent, title, pageLimit, dataLimit}) => {
+const Pagination = ({data, RenderComponent, dataLimit}) => {
     const [pages] = useState(Math.round(data.length / dataLimit));
     const [currentPage, setCurrentPage] = useState(1);
 
