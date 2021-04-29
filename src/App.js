@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import ResponsiveLayout from './features/ResponsiveLayout/ResponsiveLayout'
-import InfiniteScroll from './features/InfiniteScroll/InfiniteScroll'
-import Pokemon from './components/Pokemon'
+
 import './App.css';
 
 const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=898";
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
-  const [error, setError] = useState('');
   
 
   useEffect(() => {
@@ -18,7 +16,7 @@ function App() {
       throw new Error('Something went wrong while requesting Pokemon')
     })
     .then((data) => setPokemon(data.results))
-    .catch((error) => setError(error));
+    .catch((error) => console.log(error));
   }, []);
 
   return (

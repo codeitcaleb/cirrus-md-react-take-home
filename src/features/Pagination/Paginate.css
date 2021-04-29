@@ -1,0 +1,46 @@
+  .buttons-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+  .inner-container {
+    background: gray;
+  }
+    
+  .inner-container .nes-container {
+    height: 100%;
+    
+  }
+
+  .outer .nes-container {
+    height: 100%;
+  }
+  
+  .prev,
+  .next {
+    background: #fff;
+    border: none;
+    padding: 5px 2px;
+    color: blue;
+    margin: 10px 2px;
+  }
+
+  .left-arrow {
+    transform: rotate(270deg) 
+  }
+
+  .right-arrow {
+    transform: rotate(90deg)
+  }
+  
+  .paginationItem.active {
+    color: #888;
+    pointer-events: none;
+  }
+  
+  .prev.disabled,
+  .next.disabled {
+    pointer-events: none;
+    box-shadow: none;
+    color: #999;
+  }

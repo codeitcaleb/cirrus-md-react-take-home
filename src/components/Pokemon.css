@@ -52,3 +52,58 @@ img {
     height: 50px;
 }
 
+@media only screen and (max-width: 472px) {
+    .pokemon-container {
+        position: relative;
+        display: inline;
+    }
+    
+    .pokemon-card {
+        font-family: 'Press Start 2P';
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        border: 14px pixelated #000;
+        background: #fff;
+        margin: 0px 0px 1px;
+        padding: 4px 10px;
+    }
+    
+    .dex-number {
+        padding-right: 10px
+    }
+    
+    .pokemon-name {
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        padding: 10px;
+        /* margin: auto; */
+    }
+    
+    .pokemon-card button {
+        position: absolute;
+        right: 10px;
+        top: 13px;
+        text-align: center;
+        align-items: flex-end;
+        float: right;
+        justify-content: flex-end;
+        font-family: 'Press Start 2P';
+        height: 32px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        border: 3px solid;
+        border-radius: 50px;
+       object-fit: fill;
+        width: 50px;
+        height: 50px;
+    }
+}

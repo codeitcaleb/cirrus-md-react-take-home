@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import Pagination from '../Pagination/Pagination'
-import InfiniteScroll from '../InfiniteScroll/InfiniteScroll'
+import Paginate from '../Pagination/Paginate'
+import InfiniteList from '../InfiniteScroll/InfiniteList'
 import Pokemon from '../../components/Pokemon'
 
 const ResponsiveLayout = ({data}) => {
@@ -17,12 +17,12 @@ const ResponsiveLayout = ({data}) => {
     return (
         <> {
             width > breakpoint ? 
-            <Pagination
+            <Paginate
                 data={data}
                 RenderComponent={Pokemon}
                 dataLimit={9}
             /> : 
-            <InfiniteScroll 
+            <InfiniteList 
                 data={data}
             /> 
         }
