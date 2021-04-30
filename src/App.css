@@ -18,6 +18,7 @@ html, body {
 }
 
 .title {
+  font-family: 'Press Start 2P';
   text-align: center;
   color: yellow;
   -webkit-text-fill-color: yellow;
@@ -25,4 +26,35 @@ html, body {
 
 .App-link {
   color: #61dafb;
+}
+
+@media only screen and (max-width: 650px) {
+  html, body {
+    height: 100%;
+  }
+  
+  .App {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .outer {
+    height: 90%;
+  }
+  
+  .header {
+    background: red;
+    height: 15%
+  }
+  
+  .title {
+    text-align: center;
+    color: yellow;
+    -webkit-text-fill-color: yellow;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
 }
