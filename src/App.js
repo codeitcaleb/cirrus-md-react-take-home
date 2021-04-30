@@ -7,7 +7,6 @@ const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=898";
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
-  
 
   useEffect(() => {
     fetch(url)
@@ -22,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <div className="header nes-container">
-        <h1 className="title">Pokémon</h1>
+        <h1 className="title">PokéList</h1>
       </div>
     
       {

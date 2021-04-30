@@ -56,21 +56,17 @@ img {
     .pokemon-container {
         position: relative;
         display: block;
-        /* margin-bottom: 25px; */
-        border: 1px solid yellow;
+        border: 3px solid white;
     }
     
     .pokemon-card .nes-container{
         font-family: 'Press Start 2P';
         display: block;
-        
-        /* flex-direction: column; */
-        /* align-items: center; */
+
         font-size: 16px;
         border: 14px pixelated #000;
         background: #fff;
         margin: 0px 0px 300px;
-        /* padding: 4px 10px; */
     }
 
     .pokemon-card, .nes-container{
@@ -96,7 +92,7 @@ img {
         text-align: center;
         align-items: center;
         vertical-align: middle;
-        border: 1px solid blue;
+
         margin: 15px 0px 0px;
         padding: 10px;
     }
@@ -132,21 +128,18 @@ img {
     .pokemon-container {
         position: relative;
         display: block;
-        /* margin-bottom: 25px; */
-        border: 1px solid yellow;
+
+        border: 2px solid white;
     }
     
     .pokemon-card .nes-container{
         font-family: 'Press Start 2P';
         display: block;
         
-        /* flex-direction: column; */
-        /* align-items: center; */
         font-size: 16px;
         border: 14px pixelated #000;
         background: #fff;
         margin: 0px 0px 300px;
-        /* padding: 4px 10px; */
     }
 
     .pokemon-card, .nes-container{

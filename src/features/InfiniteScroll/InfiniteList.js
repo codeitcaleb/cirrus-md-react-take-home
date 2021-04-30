@@ -21,7 +21,7 @@ const InfiniteList = ({data}) => {
             
             setLastPosition(lastPosition + perPage);   
     };
-
+    console.log(data)
     return (
         <>
             <div className="inner-container nes-container">
@@ -30,7 +30,7 @@ const InfiniteList = ({data}) => {
                    next={loadPokemon}
                    hasMore={true}
                    loader={<h4>Loading...</h4>}
-                   height={500}
+                   height={550}
                    endMessage={
                         <p style={{ textAlign: "center" }}>
                         <b>Yay! You have seen it all</b>
