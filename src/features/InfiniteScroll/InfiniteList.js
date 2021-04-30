@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
 import Pokemon from '../../components/Pokemon'
@@ -23,7 +23,7 @@ const InfiniteList = ({data}) => {
     };
 
     return (
-        <div className="outer nes-container">
+        <>
             <div className="inner-container nes-container">
                 <InfiniteScroll 
                    dataLength={allPokemon.length}
@@ -50,7 +50,7 @@ const InfiniteList = ({data}) => {
                     
                 </InfiniteScroll>
             </div>
-       </div>         
+       </>         
     )
 };
 

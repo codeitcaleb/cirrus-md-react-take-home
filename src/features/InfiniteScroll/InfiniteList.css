@@ -1,10 +1,30 @@
+/* .outer {
+    min-height: 100%;
+    height: auto !important;
+    height: 800px;
+    margin: 0 auto;
+  } */
+
 .inner-container {
     background: gray;
     height: 100%;
     flex-flow: column;
   }
+
+  @media only screen and (max-width: 650px) {
+    .outer .nes-container {
+        height: 100%;
+        margin: 0 auto;
+      } 
     
-  .inner-container .nes-container {
+    .inner-container {
+        background: gray;
+        height: 100%;
+        flex-flow: column;
+      }
+  }
+    
+  /* .inner-container .nes-container {
     height: 100%;
     width: 100%;
     min-height: 100%;
@@ -12,18 +32,4 @@
     height: auto !important;
     height: 100%;
     margin: 0 auto;
-  }
-  
-  .outer .nes-container {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto;
-  }
-
-  .outer {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto;
-  }
+  } */

@@ -20,7 +20,7 @@ const ResponsiveLayout = ({data}) => {
             <Paginate
                 data={data}
                 RenderComponent={Pokemon}
-                dataLimit={9}
+                dataLimit={10}
             /> : 
             <InfiniteList 
                 data={data}

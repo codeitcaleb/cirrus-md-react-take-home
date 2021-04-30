@@ -8,8 +8,13 @@ html, body {
   text-align: center;
 }
 
+.outer {
+  height: 90%;
+}
+
 .header {
   background: red;
+  height: 10%
 }
 
 .title {
@@ -17,12 +22,6 @@ html, body {
   color: yellow;
   -webkit-text-fill-color: yellow;
 }
-
-.inner-container .nes-container {
-  height: 100%;
-}
-
-
 
 .App-link {
   color: #61dafb;

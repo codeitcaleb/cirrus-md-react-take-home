@@ -24,7 +24,7 @@ function App() {
       <div className="header nes-container">
         <h1 className="title">Pokémon</h1>
       </div>
-
+    
       {
         pokemon.length > 0 ? (
           <ResponsiveLayout 

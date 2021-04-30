@@ -22,10 +22,13 @@ const Pokemon = (props) => {
                     <h3 className="dex-number">{id}</h3>
                     <img className="pokemon-img" src={img} alt={`${name}`} />
                     <h2 className="pokemon-name">{name.toUpperCase()}</h2>
-                            
-                    <button className="nes-btn is-primary" onClick={() => alert(`${name.toUpperCase()}!`)}>
-                        I Choose You
-                    </button>
+                    
+                    {/* <div className="choose-btn"> */}
+                        <button className="nes-btn is-primary" onClick={() => alert(`${name.toUpperCase()}!`)}>
+                            Choose
+                        </button>
+                    {/* </div>  */}
+                    
                 </div>
             </a>
             

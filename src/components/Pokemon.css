@@ -47,52 +47,148 @@ a {
 img {
     border: 3px solid;
     border-radius: 50px;
-   object-fit: fill;
+    object-fit: fill;
     width: 50px;
     height: 50px;
+}
+
+@media only screen and (max-width: 650px) {
+    .pokemon-container {
+        position: relative;
+        display: block;
+        /* margin-bottom: 25px; */
+        border: 1px solid yellow;
+    }
+    
+    .pokemon-card .nes-container{
+        font-family: 'Press Start 2P';
+        display: block;
+        
+        /* flex-direction: column; */
+        /* align-items: center; */
+        font-size: 16px;
+        border: 14px pixelated #000;
+        background: #fff;
+        margin: 0px 0px 300px;
+        /* padding: 4px 10px; */
+    }
+
+    .pokemon-card, .nes-container{
+        font-family: 'Press Start 2P';
+        display: block;
+
+        font-size: 16px;
+        border: 14px pixelated #000;
+        background: #fff;
+        margin: 0px;
+        margin-top: 0px;
+        padding: 20px 20px 25px 20px ;
+    }
+    
+    .dex-number {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    
+    .pokemon-name {
+        font-size: 14px;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        border: 1px solid blue;
+        margin: 15px 0px 0px;
+        padding: 10px;
+    }
+    
+    .pokemon-card button {
+        display: block;
+    
+        font-family: 'Press Start 2P';
+        font-size: 10px;
+
+        margin: 5px 10px;
+        border: 1px solid blue;
+
+        height: 25px;
+        width:80px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        margin-top: 10px;
+        border: 3px solid;
+        border-radius: 50px;
+        object-fit: fill;
+        width: 90px;
+        height: 90px;
+    }
 }
 
 @media only screen and (max-width: 472px) {
     .pokemon-container {
         position: relative;
-        display: inline;
+        display: block;
+        /* margin-bottom: 25px; */
+        border: 1px solid yellow;
     }
     
-    .pokemon-card {
+    .pokemon-card .nes-container{
         font-family: 'Press Start 2P';
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 12px;
+        display: block;
+        
+        /* flex-direction: column; */
+        /* align-items: center; */
+        font-size: 16px;
         border: 14px pixelated #000;
         background: #fff;
-        margin: 0px 0px 1px;
-        padding: 4px 10px;
+        margin: 0px 0px 300px;
+        /* padding: 4px 10px; */
+    }
+
+    .pokemon-card, .nes-container{
+        font-family: 'Press Start 2P';
+        display: block;
+
+        font-size: 16px;
+        border: 14px pixelated #000;
+        background: #fff;
+        margin: 0px;
+        margin-top: 0px;
+        padding: 20px 20px 25px 20px ;
     }
     
     .dex-number {
-        padding-right: 10px
+        position: absolute;
+        float: left;
+        top: 10px;
+        left: 10px;
     }
     
     .pokemon-name {
-        font-size: 15px;
+        font-size: 14px;
         text-align: center;
         align-items: center;
         vertical-align: middle;
+        border: 1px solid blue;
+        margin: 10px 0px;
         padding: 10px;
-        /* margin: auto; */
     }
     
     .pokemon-card button {
-        position: absolute;
-        right: 10px;
-        top: 13px;
-        text-align: center;
-        align-items: flex-end;
-        float: right;
-        justify-content: flex-end;
+        display: block;
+    
         font-family: 'Press Start 2P';
-        height: 32px;
+        font-size: 10px;
+
+        margin: 0;
+        border: 1px solid blue;
+
+        height: 25px;
+        width:80px;
     }
     
     a {
@@ -102,8 +198,8 @@ img {
     img {
         border: 3px solid;
         border-radius: 50px;
-       object-fit: fill;
-        width: 50px;
-        height: 50px;
+        object-fit: fill;
+        width: 70px;
+        height: 70px;
     }
 }

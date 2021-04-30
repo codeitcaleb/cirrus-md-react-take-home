@@ -25,9 +25,8 @@ const Pagination = ({data, RenderComponent, dataLimit}) => {
     }
 
     return (
-        <div className="outer nes-container">
-           
-           <div className="buttons-container {
+        <>
+           <div className="arrow-buttons-container {
 ">
                <button
                  onClick={goToPreviousPage}
@@ -49,7 +48,7 @@ const Pagination = ({data, RenderComponent, dataLimit}) => {
                 <RenderComponent key={idx} data={d} />
                ))}
            </div>
-        </div>
+        </>
     )
 }
 

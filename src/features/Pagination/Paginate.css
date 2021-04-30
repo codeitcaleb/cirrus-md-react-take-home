@@ -1,19 +1,16 @@
-  .buttons-container {
+  .arrow-buttons-container {
       display: flex;
       justify-content: flex-end;
     }
 
-  .inner-container {
+  /* .inner-container {
     background: gray;
-  }
-    
-  .inner-container .nes-container {
     height: 100%;
+  } */
     
-  }
 
   .outer .nes-container {
-    height: 100%;
+    height: 90%;
   }
   
   .prev,
